@@ -35,13 +35,14 @@
 
 <style>
 	.resume-card {
-		background: white;
-		padding: 35px;
-		border-radius: 20px;
-		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-		max-width: 850px;
-		width: 100%;
-	}
+	background: lightblue;
+	padding: 35px;
+	border: 8px solid blue;
+	border-radius: 20px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	max-width: 850px;
+	width: 100%;
+    }
 
 	.header {
 		text-align: center;
