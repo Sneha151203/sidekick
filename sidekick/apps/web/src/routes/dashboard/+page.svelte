@@ -3,69 +3,95 @@
 	import AnimationTab from '$lib/components/AnimationTab.svelte';
 	import WorkflowTab from '$lib/components/WorkflowTab.svelte';
 
-	let activeTab = $state('resume');
+	let activeTab = 'resume';
 </script>
 
 <div class="dashboard">
-	<aside class="sidebar">
-		<h2>SideKick</h2>
+	<h1>🚀 SideKick Dashboard</h1>
 
-		<button onclick={() => activeTab = 'resume'}>
-			📄 Resume
+	<div class="tabs">
+		<button
+			class:active={activeTab === 'resume'}
+			onclick={() => (activeTab = 'resume')}
+		>
+			Resume
 		</button>
 
-		<button onclick={() => activeTab = 'animation'}>
-			🎲 Animation
+		<button
+			class:active={activeTab === 'animation'}
+			onclick={() => (activeTab = 'animation')}
+		>
+			Animation
 		</button>
 
-		<button onclick={() => activeTab = 'workflow'}>
-			🔀 Workflow
+		<button
+			class:active={activeTab === 'workflow'}
+			onclick={() => (activeTab = 'workflow')}
+		>
+			Workflow
 		</button>
-	</aside>
+	</div>
 
-	<main class="content">
+	<div class="content">
 		{#if activeTab === 'resume'}
 			<ResumeTab />
-		{/if}
-
-		{#if activeTab === 'animation'}
+		{:else if activeTab === 'animation'}
 			<AnimationTab />
-		{/if}
-
-		{#if activeTab === 'workflow'}
+		{:else}
 			<WorkflowTab />
 		{/if}
-	</main>
+	</div>
 </div>
 
 <style>
 	.dashboard {
-		display: flex;
-		height: 100vh;
+		max-width: 1200px;
+		margin: 40px auto;
+		padding: 30px;
 		font-family: Arial, sans-serif;
+		background: #f8fafc;
+		border-radius: 20px;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 	}
 
-	.sidebar {
-		width: 250px;
-		background: #1e293b;
-		color: white;
-		padding: 20px;
+	h1 {
+		text-align: center;
+		color: #2563eb;
+		margin-bottom: 30px;
+		font-size: 2.5rem;
+	}
+
+	.tabs {
 		display: flex;
-		flex-direction: column;
-		gap: 10px;
+		justify-content: center;
+		gap: 15px;
+		margin-bottom: 30px;
 	}
 
-	.sidebar button {
-		padding: 12px;
+	button {
+		padding: 14px 28px;
 		border: none;
-		border-radius: 8px;
+		border-radius: 12px;
 		cursor: pointer;
 		font-size: 16px;
+		font-weight: bold;
+		background: white;
+		box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+		transition: all 0.3s ease;
+	}
+
+	button:hover {
+		transform: translateY(-3px);
+	}
+
+	button.active {
+		background: #2563eb;
+		color: white;
 	}
 
 	.content {
-		flex: 1;
-		padding: 30px;
-		background: #f8fafc;
+		display: flex;
+		justify-content: center;
+		margin-top: 20px;
 	}
 </style>
