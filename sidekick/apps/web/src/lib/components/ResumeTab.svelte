@@ -4,8 +4,6 @@
 		<p>📧 snehanagaraju15023@gmail.com</p>
 	</div>
 
-	<hr>
-
 	<h2>🎓 Education</h2>
 	<p>Bachelor of Engineering</p>
 
@@ -35,37 +33,29 @@
 
 <style>
 	.resume-card {
-	background: lightblue;
-	padding: 35px;
-	border: 8px solid blue;
-	border-radius: 20px;
-	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-	max-width: 850px;
-	width: 100%;
-    }
+		background: white;
+		padding: 35px;
+		border-radius: 20px;
+		box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+		max-width: 850px;
+		width: 100%;
+	}
 
 	.header {
 		text-align: center;
-		margin-bottom: 20px;
+		margin-bottom: 25px;
 	}
 
 	h1 {
 		color: #2563eb;
-		margin-bottom: 8px;
 		font-size: 2rem;
+		margin-bottom: 8px;
 	}
 
 	h2 {
 		color: #1e3a8a;
 		margin-top: 25px;
 		margin-bottom: 10px;
-	}
-
-	hr {
-		border: none;
-		height: 2px;
-		background: #e5e7eb;
-		margin: 20px 0;
 	}
 
 	.skills {
@@ -80,10 +70,6 @@
 		padding: 8px 14px;
 		border-radius: 20px;
 		font-weight: 600;
-	}
-
-	ul {
-		padding-left: 20px;
 	}
 
 	li {

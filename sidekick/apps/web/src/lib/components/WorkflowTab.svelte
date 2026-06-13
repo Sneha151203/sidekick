@@ -1,76 +1,44 @@
-<div class="card">
-	<h1>🔀 Workflow Editor</h1>
+<div class="workflow-card">
+	<h2>📋 Workflow Manager</h2>
 
-	<div class="workflow">
-		<div class="node trigger">
-			📥 Trigger
-		</div>
+	<div class="task">
+		<span>✅ Resume Preparation</span>
+	</div>
 
-		<div class="connector">↓</div>
+	<div class="task">
+		<span>✅ Dashboard Development</span>
+	</div>
 
-		<div class="node process">
-			⚙️ Process Data
-		</div>
+	<div class="task">
+		<span>🔄 UI Enhancement</span>
+	</div>
 
-		<div class="connector">↓</div>
-
-		<div class="node ai">
-			🤖 AI Agent
-		</div>
-
-		<div class="connector">↓</div>
-
-		<div class="node output">
-			📤 Output
-		</div>
+	<div class="task">
+		<span>🚀 Project Deployment</span>
 	</div>
 </div>
 
 <style>
-	.card {
+	.workflow-card {
 		background: white;
-		padding: 25px;
-		border-radius: 16px;
-		border: 3px solid #2563eb;
-		box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+		padding: 35px;
+		border-radius: 20px;
+		box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+		max-width: 850px;
+		width: 100%;
 	}
 
-	.workflow {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin-top: 30px;
+	h2 {
+		color: #2563eb;
+		margin-bottom: 20px;
 	}
 
-	.node {
-		width: 220px;
+	.task {
 		padding: 15px;
-		border-radius: 12px;
-		text-align: center;
-		font-weight: bold;
-		color: white;
-		margin: 5px 0;
-	}
-
-	.trigger {
-		background: #16a34a;
-	}
-
-	.process {
-		background: #ea580c;
-	}
-
-	.ai {
-		background: #7c3aed;
-	}
-
-	.output {
-		background: #2563eb;
-	}
-
-	.connector {
-		font-size: 28px;
-		font-weight: bold;
-		margin: 5px 0;
+		margin-bottom: 12px;
+		background: #f8fafc;
+		border-left: 5px solid #2563eb;
+		border-radius: 10px;
+		font-weight: 500;
 	}
 </style>
