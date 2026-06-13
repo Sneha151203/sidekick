@@ -49,8 +49,8 @@
 	margin: 40px auto;
 	padding: 30px;
 	font-family: Arial, sans-serif;
-	background: yellow;
-	border: 10px solid red;
+	background: #f8fafc;
+	border: 10px solid blue;
 	border-radius: 20px;
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     }
