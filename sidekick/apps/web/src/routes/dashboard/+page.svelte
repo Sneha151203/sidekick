@@ -45,14 +45,15 @@
 
 <style>
 	.dashboard {
-		max-width: 1200px;
-		margin: 40px auto;
-		padding: 30px;
-		font-family: Arial, sans-serif;
-		background: #f8fafc;
-		border-radius: 20px;
-		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-	}
+	max-width: 1200px;
+	margin: 40px auto;
+	padding: 30px;
+	font-family: Arial, sans-serif;
+	background: yellow;
+	border: 10px solid red;
+	border-radius: 20px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
 
 	h1 {
 		text-align: center;
