@@ -4,43 +4,33 @@
 	import WorkflowTab from '$lib/components/WorkflowTab.svelte';
 
 	let activeTab = $state('resume');
-
-	function setTab(tab: string) {
-		activeTab = tab;
-	}
 </script>
 
 <div class="dashboard">
 	<h1>🚀 SideKick Dashboard</h1>
 
 	<div class="tabs">
-	<button
-		class:active={activeTab === 'resume'}
-		onclick={() => {
-			activeTab = 'resume';
-		}}
-	>
-		Resume
-	</button>
+		<button
+			class:active={activeTab === 'resume'}
+			onclick={() => (activeTab = 'resume')}
+		>
+			Resume
+		</button>
 
-	<button
-		class:active={activeTab === 'animation'}
-		onclick={() => {
-			activeTab = 'animation';
-		}}
-	>
-		Animation
-	</button>
+		<button
+			class:active={activeTab === 'animation'}
+			onclick={() => (activeTab = 'animation')}
+		>
+			Animation
+		</button>
 
-	<button
-		class:active={activeTab === 'workflow'}
-		onclick={() => {
-			activeTab = 'workflow';
-		}}
-	>
-		Workflow
-	</button>
-</div>
+		<button
+			class:active={activeTab === 'workflow'}
+			onclick={() => (activeTab = 'workflow')}
+		>
+			Workflow
+		</button>
+	</div>
 
 	<div class="content">
 		{#if activeTab === 'resume'}
@@ -88,6 +78,10 @@
 		background: white;
 		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 		transition: all 0.3s ease;
+	}
+
+	button:hover {
+		transform: translateY(-2px);
 	}
 
 	button.active {
